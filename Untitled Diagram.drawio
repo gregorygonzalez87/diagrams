@@ -1,9 +1,69 @@
-<mxfile host="app.diagrams.net" modified="2023-05-31T14:05:47.352Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" version="21.3.6" etag="Hic8lOOiRKsVOxFi9Aex" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-31T14:19:47.780Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="HvbjbrEF3NPG8Jnh-Sre" version="21.3.6" type="github">
   <diagram name="Page-1" id="Y_hvATmXojaEpZHWKoQv">
-    <mxGraphModel>
+    <mxGraphModel dx="2924" dy="1116" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="klUS9usgT8H12t2yNgIc-1" value="NCISReceived/Parse" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-2" value="RollupStatus (Smarty)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="klUS9usgT8H12t2yNgIc-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-130" y="100" as="sourcePoint" />
+            <mxPoint x="-50" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-4" value="Background Report Saved (address_history_status marked complete)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="70" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="klUS9usgT8H12t2yNgIc-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-130" y="200" as="sourcePoint" />
+            <mxPoint x="-50" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-6" value="Background Report Saved (address_check_status marked complete)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="170" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="klUS9usgT8H12t2yNgIc-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="100" as="sourcePoint" />
+            <mxPoint x="190" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-8" value="ProcessCounties shouldQueue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-10" value="address_history_status is Complete, address_check_status is NOT Complete. Does not queue." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="65" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="99.5" as="sourcePoint" />
+            <mxPoint x="380" y="99.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="klUS9usgT8H12t2yNgIc-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="200" as="sourcePoint" />
+            <mxPoint x="190" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-13" value="ProcessCounties shouldQueue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-14" value="address_history_status is Complete, address_check_status is Complete. Queues." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="165" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="klUS9usgT8H12t2yNgIc-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="199.5" as="sourcePoint" />
+            <mxPoint x="380" y="199.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
